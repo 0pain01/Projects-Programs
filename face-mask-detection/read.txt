@@ -1,0 +1,2 @@
+The project is for detecting face mask.
+Used Google colab to train the yolov3 model and then using its weight to detct the face mask.
