@@ -1,7 +1,0 @@
-The project is for detecting face mask.
-Used Google colab to train the yolov3 model and then using its weight to detct the face mask.
-the folder contains:
-1. custom yolov3 google colab training python file
-2. face mask labelled images
-3. yolov3 detction python file after getting the weightd through google colab
-4. training.cfg for detection  in yolov3
