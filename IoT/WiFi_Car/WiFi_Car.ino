@@ -3,8 +3,12 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
-int value;
-#define IR D4     //D4 Pin of NodeMCU
+#define echopin 2
+#define trigpin 13
+
+long duration;
+int distance;
+
 //Motor A
 const int inputPin1  = 5;    // Pin 15 of L293D IC, D1 Pin of NodeMCU
 const int inputPin2  = 16;    // Pin 10 of L293D IC, D0 Pin of NodeMCU
@@ -19,19 +23,18 @@ char auth[] = "Ud8zxRNWwAPuRQt99MkrS6n1WrAwupwV";
 char ssid[] = "P@in";
 char pass[] = "";
 
+
 BLYNK_WRITE(V1)
 {
   int x = param[0].asInt();
   int y = param[1].asInt();
+  
   // Do something with x and y
   Serial.print("X = ");
   Serial.print(x);
   Serial.print("; Y = ");
   Serial.println(y);
 
-//  int speed =350;
-//  analogWrite(EN1, speed);//sets the motors speed
-//  analogWrite(EN2, speed);//sets the motors speed
 // Joystick Movement
   if (y>350)
   {
@@ -45,16 +48,16 @@ BLYNK_WRITE(V1)
       backward();
     }
 
-   if (x<132)
+   if (x<130)
     {
-      Serial.print("right");
-      right();
+      Serial.print("left");
+      left();
     }
  
   if (x>380) 
     {
-      Serial.print("left");
-      left();
+      Serial.print("tight");
+      right();
     }
 
   if ((y==256) && (x==256))
@@ -66,8 +69,7 @@ BLYNK_WRITE(V1)
 
 BLYNK_WRITE(V2)
 {
-  int speed = param.asInt(); // assigning incoming value from pin V2 to a variable
-    //speed =350;
+   int speed = param.asInt(); // assigning incoming value from pin V2 to a variable
     analogWrite(EN1, speed);//sets the motors speed
     analogWrite(EN2, speed);//sets the motors speed
 
@@ -80,29 +82,13 @@ void setup()
     pinMode(inputPin1, OUTPUT);
     pinMode(inputPin2, OUTPUT);
     pinMode(inputPin3, OUTPUT);
-    pinMode(inputPin4, OUTPUT);
-    pinMode(IR,INPUT);  
-  
-  Serial.begin(9600);
-  Blynk.begin(auth, ssid, pass);
+    pinMode(inputPin4, OUTPUT);  
+    pinMode(trigpin,OUTPUT);
+    pinMode(echopin,INPUT);
+    Serial.begin(9600);
+    Blynk.begin(auth, ssid, pass);
 }
-
-void loop()
-{
-  Blynk.run();
-  value=digitalRead(IR);
-     if(value==0)
-    {
-      Serial.print("Object infront!");
-      backward();
-      delay(200);
-      stop();
-    }
-}
-
-// Functions for Joystick Direction provider
-
-void left(void)
+void right(void)
 {
     digitalWrite(inputPin1, HIGH);
     digitalWrite(inputPin2, LOW);
@@ -110,7 +96,7 @@ void left(void)
     digitalWrite(inputPin4, LOW);  
 }
 
-void right(void)
+void left(void)
 {
     digitalWrite(inputPin1, LOW);
     digitalWrite(inputPin2, HIGH);
@@ -123,10 +109,10 @@ void stop(void)
     digitalWrite(inputPin1, LOW);
     digitalWrite(inputPin2, LOW);
     digitalWrite(inputPin3, LOW);
-    digitalWrite(inputPin4, LOW); 
+    digitalWrite(inputPin4, LOW);
 }
 
-void backward(void)
+void forward(void)
 {   
     digitalWrite(inputPin1, LOW);
     digitalWrite(inputPin2, HIGH);
@@ -134,10 +120,29 @@ void backward(void)
     digitalWrite(inputPin4, LOW); 
 }
 
-void forward(void)
+void backward(void)
 { 
     digitalWrite(inputPin1, HIGH);
     digitalWrite(inputPin2, LOW);
     digitalWrite(inputPin3, LOW);
     digitalWrite(inputPin4, HIGH); 
+}
+void loop()
+{
+  Blynk.run();
+  digitalWrite(trigpin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigpin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigpin, LOW);
+  duration = pulseIn(echopin, HIGH);
+  distance = duration /58.2;
+
+  if(distance<15)
+  {
+    stop();
+    backward();
+    delay(100);
+    stop();
+  }
 }
