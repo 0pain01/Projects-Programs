@@ -22,12 +22,12 @@ The Ultrasonic Sensor is used to restrict the car from colliding to any obstacle
 The speed is manipulated by the Motor driver using `PWM (Pulse Width Modulation)` signals according to 
 the value send to it through the slider in the blynk app.
 
-##Joystick 
+## Joystick 
 The joystick is based on the X-Y coordinates system. If you move the joystick in the X axis to a certain 
 Y coordinate the car will move towards right direction and thus other direction work in this coordinate
 based system.
 
-##Ultrasonic Sensor
+## Ultrasonic Sensor
 It is based on the ultrasonic wave send and receive time lap. The time between the send and receive of the 
 wave with respect to the speed of sound in air will help in finding the distance between the obstacle and the car.
 If the car is under a certain threshold distance from the obstacle the car will stop and go back for a time delay.
