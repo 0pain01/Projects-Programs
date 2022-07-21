@@ -36,7 +36,7 @@ save_obj=True
 
 ## Output:
 <p align="center">
-  <img src="Output.jpeg" alt="Result" width="738">
+  <img src="output.jpeg" alt="Result" width="738">
 </p>
 
 ## OCR
