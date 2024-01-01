@@ -1,6 +1,6 @@
 # Car Number Plate Detection and Extraction
 
-* **Yolov7** single shot objecct detector is used.
+* **Yolov7** single shot object detector is used and the compiled on google colab notebook.
 * The dataset is used from **Roboflow** as it provide pre-defined annotated labelled image dataset 
   and also provide the api based dataset provision so not need to download such huge data on a local machine.
 * The dataset contained 3.3k images.
@@ -36,7 +36,7 @@ save_obj=True
 
 ## Output:
 <p align="center">
-  <img src="Output.jpeg" alt="Result" width="738">
+  <img src="output.jpeg" alt="Result" width="738">
 </p>
 
 ## OCR
