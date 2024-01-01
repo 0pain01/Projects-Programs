@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+        <nav class="navbar navbar-nav">
+            <div class="container">
+                <div class="col-2" id="navlog">
+                    <div style="padding: 0;margin: 0;">
+                        <a class="navbar-brand" href="#" >
+                            <img src="logo.png" alt="Logo" width="70px" height="16px" >
+                        </a>
+                        <p id="para">Explore <strong style="color: yellow;">Plus</strong></p>
+                    </div> 
+                </div>
+
+                <div class="col input-group">
+                    <input type="text" class="form-control" placeholder="Search for products, brands and more" style="border-radius: 0;max-width: 75%;">
+                        <button id="btn1" class="btn btn-secondary" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                </div>
+
+                <div class="col-6 row">
+                    <div class="col-3 dropdown">
+                        <button  class="dropbtn" id="btn2">Login</button>   
+                        <div class="dropdown-content" >
+                            <a class="dropdown-item" href="#">New Customer? &nbsp;&nbsp;&nbsp;<span style="color: blue;">Sign Up</span></a>
+                            <hr class="hr" style="padding: 0;margin: 0;"/>
+                            <a class="dropdown-item" href="#"><i class="bi bi-person-circle">&nbsp; </i>My profile</a>
+                            <hr class="hr" style="padding: 0;margin: 0;"/>
+                            <a class="dropdown-item" href="#"><i class="bi bi-plus-square">&nbsp; </i>Flipkart Plus Zone</a>
+                            <hr class="hr" style="padding: 0;margin: 0;"/>
+                            <a class="dropdown-item" href="#"><i class="bi bi-caret-up-square">&nbsp; </i>Orders</a>
+                            <hr class="hr" style="padding: 0;margin: 0;"/>
+                            <a class="dropdown-item" href="#"><i class="bi bi-heart-fill">&nbsp; </i>Wishlist</a>
+                            <hr class="hr" style="padding: 0;margin: 0;"/>
+                            <a class="dropdown-item" href="#"><i class="bi bi-ticket-perforated-fill">&nbsp; </i>Rewards</a>
+                            <hr class="hr" style="padding: 0;margin: 0;"/>
+                            <a class="dropdown-item" href="#"><i class="bi bi-wallet-fill">&nbsp; </i>Gift Cards</a>
+                        </div>
+                    </div>
+                    <div class="col-3" style="color: white;font-weight: bold;font-size: 16px;white-space: nowrap;padding-right: 2px;">
+                        <a>Become a Seller</a>
+                    </div>
+                    <div class="col-2 dropdown">
+                        <button class="dropbtn">More <i class="bi bi-arrow-down-short" style="color:white"></i></button>
+                            <div class="dropdown-content" >
+                                <a class="dropdown-item" href="#"><i class="bi bi-bell-fill"> </i>Notification Preference</a>
+                                <hr class="hr" style="padding: 0;margin: 0;"/>
+                                <a class="dropdown-item" href="#"><i class="bi bi-question-square-fill"> </i>24x7 Customer Care</a>
+                                <hr class="hr" style="padding: 0;margin: 0;"/>
+                                <a class="dropdown-item" href="#"><i class="bi bi-graph-up-arrow"> </i>Advertise</a>
+                                <hr class="hr" style="padding: 0;margin: 0;"/>
+                                <a class="dropdown-item" href="#"><i class="bi bi-download"> </i>Download App</a>
+                            </div>
+                    </div>
+                    <div class="col-3" id="cart">
+                        <span class="bi bi-cart2" style="color: white;font-weight: bold;">Cart</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <div class="container-fluid d-flex flex-col text-md-center justify-content-center flex-nowrap nav2">
+            <div>
+                <img src="nav/grocery.webp">
+                <p>Grocery</p>
+            </div>
+            <div>
+                <img src="nav/mobiles.webp">
+                <p>Mobiles</p>
+            </div>
+            <div>
+                <img src="nav/fashion.webp">
+                <p>Fashion</p>
+            </div>
+            <div>
+                <img src="nav/electronics.webp">
+                <p>Electronics</p>
+            </div>
+            <div>
+                <img src="nav/home.webp">
+                <p>Home</p>
+            </div>
+            <div>
+                <img src="nav/appliances.webp">
+                <p>Appliances</p>
+            </div>
+            <div>
+                <img src="nav/travel.webp">
+                <p>Travel</p>
+            </div>
+            <div>
+                <img src="nav/offers.webp">
+                <p>Offers</p>
+            </div>
+            <div>
+                <img src="nav/toys.webp">
+                <p>Beauty, Toys & More</p>
+            </div>
+            <div>
+                <img src="nav/two_vehicle.webp">
+                <p>Two Wheeler</p>
+            </div>
+        </div>
+        <div style="background-color: rgb(230, 235, 247);padding-bottom: 10px;">
+            <div id="part1" class="container">
+                <div id="carousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="slide1/card1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="slide1/card2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="slide1/card3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div id="part2" class="container d-flex flex-col">
+                <div id="part21" class="col-2">
+                    <div  class="row d-flex flex-row text-center justify-content-center p211">
+                        <p style="font-size: 20px;font-weight: 500;padding-top: 15px;">Best of  Electronics</p>
+                        <button id="btn3" class="btn btn-primary">VIEW ALL</button>
+                    </div>
+                    <div class="row p212">
+                        <img src="slide2/c.jpg" width="140px" height="84px">
+                    </div>
+                </div>
+                <div class="d-flex flex-col justify-content-start pr1">
+                    <div >
+                        <img src="slide2/camera.webp" height="110px" width="120px">
+                        <p class="pname">Top Mirrorless Cameras</p>
+                        <p class="rate">Shop Now!</p>
+                        <p class="company">Cannon,Sony,Fujifilm..</p>
+                    </div>
+                    <div>
+                        <img src="slide2/monitor.webp" height="110px" width="140px">
+                        <p class="pname">Monitors</p>
+                        <p class="rate">From Rs.7949</p>
+                        <p class="company">Lenovo</p>
+                    </div>
+                    <div>
+                        <img src="slide2/printer1.webp" height="110px" width="140px">
+                        <p class="pname">Printers</p>
+                        <p class="rate">From Rs.3999</p>
+                        <p class="company">HP</p>
+                    </div>
+                    <div>
+                        <img src="slide2/monitor1.webp" height="110px" width="140px">
+                        <p class="pname">Monitors</p>
+                        <p class="rate">From Rs.6599</p>
+                        <p class="company">Acer</p>
+                    </div>
+                    <div>
+                        <img src="slide2/trimmer.webp" height="110px" width="47px">
+                        <p class="pname">Best of Shavers</p>
+                        <p class="rate">From Rs.1649</p>
+                        <p class="company">Philips & Havells</p>
+                    </div>
+                    <div>
+                        <img src="slide2/projector.webp" height="110px" width="140px">
+                        <p class="pname">Projectors</p>
+                        <p class="rate">From Rs.89999</p>
+                        <p class="company">Zebronics</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="part2" class="container d-flex flex-col">
+                <div id="part21" class="col-2">
+                    <div  class="row d-flex flex-row text-center justify-content-center p211">
+                        <p style="font-size: 20px;font-weight: 500;padding-top: 15px;">Beauty, Food, Toys & more</p>
+                        <button id="btn3" class="btn btn-primary" >VIEW ALL</button>
+                    </div>
+                    <div class="row p212">
+                        <img src="slide3/c2.png" width="140px" height="84px">
+                    </div>
+                </div>
+                <div class="d-flex flex-col justify-content-start pr1">
+                    <div >
+                        <img src="slide3/ecycle.webp" height="110px" width="150px">
+                        <p class="pname">E-cycles</p>
+                        <p class="rate">From Rs.9999</p>
+                        <p class="company">Hero & Ranger</p>
+                    </div>
+                    <div>
+                        <img src="slide3/batman.webp" height="110px" width="100px">
+                        <p class="pname">Rideons</p>
+                        <p class="rate">Upto 70% Off</p>
+                        <p class="company">Figurens, Battles Toys & more</p>
+                    </div>
+                    <div>
+                        <img src="slide3/remotecontrol.webp" height="110px" width="140px">
+                        <p class="pname">Remote Controls</p>
+                        <p class="rate">From Rs.349</p>
+                        <p class="company">Explore Now!</p>
+                    </div>
+                    <div>
+                        <img src="slide3/headphone.webp" height="110px" width="120px">
+                        <p class="pname">Headphones</p>
+                        <p class="rate">Upto 80% Off</p>
+                        <p class="company">JBL, Boat & more</p>
+                    </div>
+                    <div>
+                        <img src="slide3/gcycle.webp" height="110px" width="150px">
+                        <p class="pname">Geared Cycles</p>
+                        <p class="rate">From Rs.3999</p>
+                        <p class="company">Leader, Cardiac & more</p>
+                    </div>
+                    <div>
+                        <img src="slide3/stationery.webp" height="110px" width="140px">
+                        <p class="pname">Top Selling Stationery</p>
+                        <p class="rate">From Rs.49</p>
+                        <p class="company">Pens, Notebooks & more</p>
+                    </div>
+                </div>
+            </div>
+            <div id="part2" class="container d-flex flex-col">
+                <div id="part21" class="col-2">
+                    <div  class="row d-flex flex-row text-center justify-content-center p211">
+                        <p style="font-size: 20px;font-weight: 500;padding-top: 15px;"> Home & Kitchen Essentials</p>
+                        <button id="btn3" class="btn btn-primary" >VIEW ALL</button>
+                    </div>
+                    <div class="row p212">
+                        <img src="slide4/c3.jpg" width="140px" height="83px">
+                    </div>
+                </div>
+                <div class="d-flex flex-col justify-content-start pr1">
+                    <div >
+                        <img src="slide4/diyas.webp" height="110px" width="150px">
+                        <p class="pname">Diyas,Candles & holders</p>
+                        <p class="rate">Upto 80% Off</p>
+                        <p class="company">Big Discounts</p>
+                    </div>
+                    <div>
+                        <img src="slide4/nets.webp" height="110px" width="100px">
+                        <p class="pname">Mosquito Nets</p>
+                        <p class="rate">From Rs.149</p>
+                        <p class="company">Best Deal Price</p>
+                    </div>
+                    <div>
+                        <img src="slide4/paintings.webp" height="110px" width="140px">
+                        <p class="pname">Paintings</p>
+                        <p class="rate">Upto 80% Off</p>
+                        <p class="company">Big Discounts</p>
+                    </div>
+                    <div>
+                        <img src="slide4/decor.webp" height="110px" width="120px">
+                        <p class="pname">Wall Decor Items</p>
+                        <p class="rate">Upto 80% Off</p>
+                        <p class="company">Big Discounts</p>
+                    </div>
+                    <div>
+                        <img src="slide4/plants.webp" height="110px" width="150px">
+                        <p class="pname">Live Plants</p>
+                        <p class="rate">From Rs.199</p>
+                        <p class="company">Best Selling</p>
+                    </div>
+                    <div>
+                        <img src="slide4/show.webp" height="110px" width="140px">
+                        <p class="pname">Showpieces</p>
+                        <p class="rate">Upto 80% Off</p>
+                        <p class="company">Big Discounts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin:10px;color: grey;padding: 5px;border-top: 1px darkgrey;">
+            <div>
+                <h5 style="font-size: 14px;font-weight: bold;">Flipkart: The One-stop Shopping Destination</h5>
+                <p style="font-size: 9px">
+                    E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.<br><br>
+                    What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.
+                </p>
+            </div>
+            <div>
+                <h5 style="font-size: 14px;font-weight: bold;">Flipkart Plus</h5>
+                <p style="font-size: 9px">
+                    A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more!
+                    <br><br>
+                    What's more, you can even use the Flipkart supercoins for a number of exciting services, like:<br>
+                    An annual Zomato Gold membership<br>
+                    An annual Hotstar Premium membership<br>
+                    6 months Gaana plus subscription<br>
+                    Rupees 550 instant discount on flights on ixigo<br>
+                    Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply
+                </p>
+            </div>
+            <div>
+                <h5 style="font-size: 14px;font-weight: bold;">No Cost EMI</h5>
+                <p style="font-size: 9px">Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</p>
+            </div>
+            <div>
+                <h5 style="font-size: 14px;font-weight: bold;">Mobile Exchange Offers</h5>
+                <p style="font-size: 9px">Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</p>
+                </div>
+        </div>
+        <div class="d-flex flex-col justify-content-evenly" style="background-color: rgb(0, 0, 53);color: white;font-size: 11px;padding: 30px;">
+            <div >
+                <ul class="link" style="list-style-type: none;">
+                    <span style="color: grey;">ABOUT</span>
+                    <li><a>Contact Us</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Careers</a></li>
+                    <li><a>Flipkart Stories</a></li>
+                    <li><a>Press</a></li>
+                    <li><a>Flipkart Wholesale</a></li>
+                    <li><a>Corporate Information</a></li>
+                </ul>
+            </div>
+            <div >
+                <ul class="link" style="list-style-type: none;">
+                    <span style="color: grey;">HELP</span>
+                    <li><a>Payments</a></li>
+                    <li><a>Shipping</a></li>
+                    <li><a>Cancellation & Returns</a></li>
+                    <li><a>FAQ</a></li>
+                    <li><a>Report Infrigment</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="link" style="list-style-type: none;">
+                    <span style="color: grey;">CONSUMER POLICY</span>
+                    <li><a>Return Policy</a></li>
+                    <li><a>Terms Of Use</a></li>
+                    <li><a>Security</a></li>
+                    <li><a>Privacy</a></li>
+                    <li><a>Sitemap</a></li>
+                    <li><a>Grievance Redressal</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="link" style="list-style-type: none;">
+                    <span style="color: grey;" >SOCIAL</span>
+                    <li><a>Facebook</a></li>
+                    <li><a>Twitter</a></li>
+                    <li><a>Youtube</a></li>
+                </ul>
+            </div>
+            <div class="vr" style="height: 120px;padding: 0;margin: 0;"></div>
+            <div>
+                <p>
+                    <span style="color: grey;">Mail Us:</span><br>
+                    Flipkart Internet Private Limited,<br>
+                    Buildings Alyssa, Begonia &<br>   
+                    Clove Embassy Tech Village,<br>                   
+                    Outer Ring Road, Devarabeesanahalli Village,<br>                   
+                    Bengaluru, 560103,<br>                   
+                    Karnataka, India
+                </p>
+            </div>
+            <div>
+                <p>
+                    <span style="color: grey;">Registered Office Address:</span><br>
+                    Flipkart Internet Private Limited,<br>
+                    Buildings Alyssa, Begonia &<br>
+                    Clove Embassy Tech Village,<br>
+                    Outer Ring Road, Devarabeesanahalli Village,<br>
+                    Bengaluru, 560103,<br>
+                    Karnataka, India<br>
+                    CIN : U51109KA2012PTC066107<br>
+                    Telephone: <span style="color: blue; cursor:pointer;">044-45614700</span>
+                </p>
+            </div>
+        </div>
+        <div class="d-flex flex-col justify-content-evenly flex-wrap" style="background-color: rgb(0, 0, 53);color: white;font-size:12px;border-top: 1px solid grey;padding: 20px;">
+            <div>
+                <span class="bi bi-bag-fill" style="color: rgb(255, 208, 0);"></span>
+                Become a Seller
+            </div>
+            <div>
+                <span class="bi bi-star-fill" style="color: rgb(255, 208, 0);"></span>
+                Advertise
+            </div>
+            <div>
+                <span class="bi bi-gift-fill" style="color: rgb(255, 208, 0);"></span>
+                Gift Cards
+            </div>
+            <div>
+                <span class="bi bi-question-circle-fill" style="color: rgb(255, 208, 0);"></span>
+                Help Center
+            </div>
+            <div>
+                <span class="bi bi-c-circle" ></span>
+                2007-2023 Flipkart.com
+            </div>
+            <div>
+                <img src="debit.jpg" height="12px">
+            </div>
+        </div>
+    </body>
+</html>

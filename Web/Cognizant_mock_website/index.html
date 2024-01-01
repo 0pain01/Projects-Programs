@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <!--css files  and bootstrap-->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+    <!--js files and bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!--navbar-->
+    <div class="row">
+    <div class="col-12 order-lg-1 order-2">
+    <nav class="navbar pull-right navbar-expand-lg navbar-light bg-light" id="nav1">
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="col-8">
+            </div>
+            <div class="col-4 navbar-nav" id="nav12">
+                <ul class="d-flex">
+                    <li><a href="#careers"> Careers </a></li>
+                    <span class="x">&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</span>
+                    <li><a href="#news"> News </a></li>
+                    <span class="x">&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</span>
+                    <li><a href="#investors"> Investors </a></li>
+                    <span class="x"> &nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                    <li><a href="#worldwide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe x" viewBox="0 0 16 16">
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                      </svg> Worldwide&nbsp;&nbsp;</a></li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search x" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup, #navbarNavAltMarkup1" aria-controls="navbarNavAltMarkup1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    </div>
+    <div class="col-12 order-lg-2 order-1">
+    <nav class="navbar pull-right navbar-expand-lg" id="nav2">
+        <a class="navbar-brand" href="#">
+            <img src="logo.svg"  href="#" height="40vh">
+            <span>| India</span>
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup1">
+            <div class="col-6 navbar-nav">
+            </div>
+            <div class="col-6 navbar-nav d-flex" id="nav21">
+                <div class="nav-item nav-link active" href="#">Industries 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                      </svg>
+                </div>
+                <div class="nav-item nav-link" href="#">Services
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                      </svg>
+                </div>
+                <div class="nav-item nav-link" href="#">Insights
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                      </svg>
+                </div>
+                <div class="nav-item nav-link" href="#">About
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+    </div>
+
+
+    <!--content1-->
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="img1.webp" class="d-block w-100" alt="img1" >
+            <div class="carousel-caption d-none d-md-block text-left" id="cap1">
+                <h1><strong>Generate new value from new technologies</strong></h1>
+                <p>Modern businesses are seizing the opportunities driven by new technologies and reshaping avenues for growth.</p>
+                <button class="btn btn-primary" style="border:none;background-color: aqua;padding:10px;font-size: 15px;font-weight: bold;color: darkblue;border-radius: 40px;">Find out more
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img2.jfif" class="d-block w-100" alt="img2">
+            <div class="carousel-caption d-none d-md-block text-left">
+                <h1><strong>Intution engineered-- human insight at superhuman speed</strong></h1>
+                <p>Anticipate trends. Drive meaningful change. Outthink your competition.That's  the power of intution-- and we  can engineer it.</p>
+                <button class="btn btn-primary" style="border:none;background-color: aqua;padding:10px;font-size: 15px;font-weight: bold;color: darkblue;border-radius: 40px;">Find out more 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img3.jfif" class="d-block w-100" alt="img3">
+            <div class="carousel-caption d-none d-md-block text-left">
+                <h1><strong>Take the pulse of your  payments strategy</strong></h1>
+                <p>Get started with the state  of global payments, our comprehensive industry analysis.</p>
+                <button class="btn btn-primary" style="border:none;background-color: aqua;padding:10px;font-size: 15px;font-weight: bold;color: darkblue;border-radius: 40px;">Find out more
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                      </svg>
+                  </button>
+              </div>
+          </div>    
+        </div>
+      </div>
+
+      <div id="part2">
+        Cognizant helps companies modernize <strong>technology</strong>,<br> reimagine <strong>processes</strong> and transform <strong>experiences</strong> so they
+        stay ahead in a fast-changing world.
+    </div>
+    <div id="part3">
+        <div id="d1"  class="parallax" >
+            <div class="container" id="d2" style="font-size:1.25rem;padding:10px;color:white;background-color: rgba(2, 22, 59, 0.8);margin-top: 320px;">
+                <p>How's India's top talent can thrive in the next decade<br><br>
+                Closing critical skills gaps will elevate India's talent model and prepare for innovation
+                and enterprise demand. Read full report on how to address those gaps.<br><br></p>
+                <a  href="#read" style="color:aqua;text-decoration: none;"><bold>Read the report summary
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                      </svg></bold>
+                </a>
+        </div>
+    </div>
+    </div>  
+
+    <!--4 card content1-->
+    <div id="part4">
+        <h1>Cognizant in India</h1>
+        <h5>See how Cognizant engineers your modern business.</h5>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card" style="background-image: url(c1.jpeg);background-size: cover;">
+                <div class="card-body" style="background-color: rgba(5, 12, 145, 0.35);height: 100px;;margin-top: 200px;">
+                  <h5 class="card-title">Accolade</h5>
+                  <h5 class="card-title">__________</h5>
+                  <p class="card-text" style="font-size: 22px;word-wrap: normal;">
+                    Cognizant named a Top Company in India
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background-image: url(c2.jpeg);background-size: cover;">
+                <div class="card-body" style="background-color: rgba(5, 12, 145, 0.35);height: 100px;;margin-top: 200px;">
+                  <h5 class="card-title">LOCATE US</h5>
+                  <h5 class="card-title">____________</h5>
+                  <p class="card-text" style="font-size: 22px;">
+                    Locate out offices
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background-image: url(c3.jpeg);background-size: cover;">
+                <div class="card-body" style="background-color: rgba(5, 12, 145, 0.35);height: 100px;;margin-top: 200px;">
+                  <h5 class="card-title">CASE STUDY</h5>
+                  <h5 class="card-title">______________</h5>
+                  <p class="card-text" style="font-size: 22px;">Indian insurer banks on AI protect  biometric data</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background-image: url(c4.jpg);background-size: cover;">
+                <div class="card-body" style="background-color: rgba(5, 12, 145, 0.35);height: 100px;;margin-top: 200px;">
+                  <h5 class="card-title">LIFE SCIENCES</h5>
+                  <h5 class="card-title">________________</h5>
+                  <p class="card-text" style="font-size: 22px;">
+                    Siemens transforms CX globally
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="parallax2" id="part5">
+        <div class="part41 d-flex flex-column" style="color:white;padding-left: 90px;padding-right: 90px;padding-top: 50px;padding-bottom: 80px;">
+            <p>DEPTH OF EXPERTISE</p>
+            <p>______________________</p>
+            <h1>SERVICES</h1>
+            <div class="row">
+                <div class="part51 col-12" style="background-color: darkblue;height:fit-content;display: flex;justify-content: center;padding: 20px;">
+                    <div class="col-4" style="font-size: 30px;">Cloud Enablement</div>
+                    <div class="col-8"  style="font-size: 20px;">Intelligent Cloud mobilizes your organization  with a next-generation cloud cloud operating model that helps increase velocity and control.  </div>
+                </div>
+                <div class="part51 col-12" style="background-color: rgb(36, 36, 174);height:fit-content;display: flex;justify-content: center;padding: 20px;">
+                    <div class="col-4" style="font-size: 30px;">Application  Services & Modernization</div>
+                    <div class="col-8"  style="font-size: 20px;">Our application  modernization  services help you  achieve  agility  for an increasingly  digital world. Integrate a combination  of accelerators, platforms and startegic  partners to modernize  core business  applications.  </div>
+                </div>
+                <div class="part51 col-12" style="background-color: rgb(70, 106, 214);height: fit-content;display: flex;justify-content: center;padding: 20px;">
+                    <div class="col-4" style="font-size: 30px;">Data, Analytics & AI</div>
+                    <div class="col-8"  style="font-size: 20px;">Integrate the enterprise and accelerate value through advanced data management strategies and solutions. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="part6">
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 95px;">
+            <div class="col">
+              <div class="card h-100">
+                <img src="nc1.jpg_" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">RECOGNITION</h5>
+                  <h5 class="card-title">An Everest Peak Matrix Enterprise QA Leader 2022</h5>
+                  <p class="card-text">Cognizant ranks ahead of 32 providers as a Leader in Everest Group’s PEAK Matrix® Assessment for creating prominent market impact in Enterprise QA services.</p>
+                </div>
+                <div class="card-footer" style="background-color: white;border-color: white;">
+                    <a  href="#read" style="text-decoration: none;font-size: 25px;"><bold>Read the report
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                          </svg></bold>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="nc2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">RECOGNITION</h5>
+                  <h5 class="card-title">Named top 10: HFS App Mod Services 2022</h5>
+                  <p class="card-text">We are #1 in the winners circle for Application Modernization execution, innovation, OneOffice alignment and voice of the customer criteria.</p>
+                </div>
+                <div class="card-footer" style="background-color: white;border-color: white;">
+                    <a  href="#read" style="text-decoration: none;font-size: 25px;"><bold>Read the report
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                          </svg></bold>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="nc3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">RECOGNITION</h5>
+                  <h5 class="card-title">Find out why we are a data and AI leader</h5>
+                  <p class="card-text">Ranked among the top providers for data and AI services, we can help you make smarter, faster business decisions.</p>
+                </div>
+                <div class="card-footer" style="background-color: white;border-color: white;">
+                    <a  href="#read" style="text-decoration: none;font-size: 25px;"><bold>Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                          </svg></bold>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div id="part7" class="d-flex flex-row justify-content-evenly">
+        <div id="part71" style="padding-left: 60px;">
+            <img src="img4.webp" >
+        </div>
+        <div class="d-flex flex-column justify-content-evenly" style="color:white;padding:20px;">
+            <h3 style="color:white;">Advance your career—and the world we live in</h3>
+            <p style="color:white;font-size: 20px;">Continuously sharpen your technical skills, your problem-solving abilities and your entrepreneurial spirit. Join Cognizant, and help us change lives.</p>
+            <a  href="#read" style="color:aqua;text-decoration: none;font-size: 25px;"><bold>Browse Job Listings
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                  </svg></bold>
+            </a>
+        </div>
+    </div>
+
+    <div id="part8">
+        <div style="padding-bottom:20px;">
+            <h2>Get answers to your questions</h2>
+            <h4>Our clients turn us to  help  them reimagine  ways of working and   technology.</h4>
+        </div>
+        <div class="form mb-3">
+            <div class="row mb-3">
+                <div class="col">
+                  <input type="text" class="form-control form-control-lg" placeholder="Name*" aria-label="name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control form-control-lg" placeholder="Email*" aria-label="mail">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                  <input type="text" class="form-control form-control-lg" placeholder="Organization*" aria-label="name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control form-control-lg" placeholder="Contact Number*" aria-label="mail">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <select class="form-select form-select-lg" id="inputGroupSelect01">
+                        <option selected>Region*</option>
+                        <option value="1">North America</option>
+                        <option value="2">South America</option>
+                        <option value="3">Europe</option>
+                        <option value="4">Middle East</option>
+                        <option value="5">APAC</option>
+                        <option value="6">India</option>
+                      </select>
+                </div>
+                <div class="col">
+                    <select class="form-select form-select-lg" id="inputGroupSelect01">
+                        <option selected>Inquiry Type*</option>
+                        <option value="1">Alumni</option>
+                        <option value="2">Career Seekers</option>
+                        <option value="3">Investor Relations</option>
+                        <option value="3">Media</option>
+                        <option value="3">Partners</option>
+                        <option value="3">Request for services</option>
+                      </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+            </div>
+            <button class="btn btn-primary btn-lg" style="background-color: aqua;border: none;font-size: 20px;color: darkblue;border-radius: 40px;">Submit
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                  </svg>
+              </button>
+              <p>This site is protected by reCAPTCHA and the Google <a href="pp">Privacy Policy</a> and <a href="#ts">Terms of Service</a> apply.</p>
+        </div>
+    </div>
+
+
+
+    <!--footer-->
+    <!-- Footer -->
+<footer class="text-center text-lg-end bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="col-12 p-4 border-bottom">  
+      <div class="d-flex flex-row">
+        <div class="col-4" style="flex:1;margin-left:20px;">
+          <a class="bi bi-linkedin" style="font-size:25px; padding-left: 15px;padding-right: 15px;"></a>
+          <a class="bo bi-twitter" style="font-size:25px;padding-left: 15px;padding-right: 15px;"></a>
+          <a class="bi bi-facebook" style="font-size:25px;padding-left: 15px;padding-right: 15px;"></a>
+          <a class="bi bi-instagram" style="font-size:25px;padding-left: 15px;padding-right: 15px;"></a>
+          <a class="bi bi-youtube" style="font-size:25px;padding-left: 15px;padding-right: 15px;"></a>
+      </div>
+      <div class="col-8">
+          <a class="p-2 bd-highlight m-auto" style="color:black;">Sitemap</a>
+          <a class="p-2 m-auto" style="color:black;">Terms</a>
+          <a class="p-2 m-auto" style="color:black;">Privacy Notice</a>
+          <a class="p-2 m-auto" style="color:black;">Cookie Notice</a>
+          <span style="color:black;">©2023 Cognizant, all rights reserved</span>
+      </div>
+      </div>
+        
+    </section>
+  </footer>
+  <!-- Footer -->
+</body>
+</html>

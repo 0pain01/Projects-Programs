@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+
+.parallax{
+    /* The image used */
+    background-image: url("bg1.jfif");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2{
+    /* The image used */
+    background-image: url("bg2.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+#nav12{
+    padding: 0;
+    margin-top: 10px;
+}
+
+#nav12>ul{
+    color: darkblue;
+}
+#nav12>ul>li{
+    list-style-type: none;
+}
+#nav12>ul>li>a{
+    color: darkblue;
+    text-decoration: none;
+}
+
+#nav12>ul>li>a:hover{
+    color: rgb(47, 163, 235);
+}
+
+#nav2{
+    background-color: white;
+}
+
+#nav2>a
+{
+    cursor: auto;
+    -webkit-user-select: text;
+    -moz-select: text;
+    -ms-select: text;
+    user-select: text;
+
+}
+
+#nav21{
+    font-size: 18px;
+}
+
+#nav21>div{
+    padding: 10px;
+
+}
+
+#nav21>div:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+.carousel-caption{
+    top: 0;
+    font-size: 1.5rem;
+    padding-right: 30%;
+}
+
+#part2{
+    padding: 25px;
+    min-height: fit-content;
+    background-color: white;
+    text-align: left;
+    font-size: 32px;
+    font-family:'Caros',sans-serif;
+    color: rgb(40, 183, 231);
+}
+#part2>strong:hover{
+    color: black;
+}
+#part3{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    background: none;
+}   
+
+#part4{
+    padding: 4rem;
+    background-image: url("card1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    color: white;
+}
+
+.card{
+    height: 350px;
+    width: auto;
+    margin: 4px;
+    padding:0px;
+}
+
+#part6{
+    background-image: url("card2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#part7{
+    background-color: rgb(1, 1, 93);
+    max-height: fit-content;
+}
+
+#part8{
+    padding: 50px;
+    color:rgb(0, 0, 51);
+}
+
+
+@media screen and (max-width:994px){
+
+    .x {
+        display:none;
+    }
+    #nav12>ul{
+        flex-direction: column;
+        font-size: 3vh;
+    }
+    #nav12>ul>li>a{
+        color: black;
+        text-decoration: none;
+    }
+    .carousel-caption{
+        font-size: 2rem;
+    }
+    
+}
+@media screen and (max-width:1100px){
+    .carousel-caption{
+        padding: 0;
+        word-wrap: normal;
+        font-size: 18px;
+    }
+    #part7>div>img{
+        object-fit: cover;
+        height: 200px;
+        width: 230px;
+    }
+   
+}
+
+@media screen and (max-width:800px){
+    .carousel-caption{
+        padding: 0;
+        word-wrap: normal;
+        font-size: 1rem;
+    }
+    .carousel-item>img{
+        filter: blur(4px);
+    }
+    .part51{
+        display: flex;
+        flex-direction: column;
+    }
+    #part7>div>img{
+        object-fit: cover;
+        height: 300px;
+        width: 230px;
+    }
+    #part71{
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .carousel-caption>h1,p{
+        display: none;
+    }
+    .carousel-item>img{
+        filter: blur(4px);
+    }
+    .part51{
+        display: flex;
+        flex-direction: column;
+    }
+}
